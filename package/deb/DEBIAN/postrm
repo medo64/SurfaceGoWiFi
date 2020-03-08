@@ -10,6 +10,8 @@ for VER in "2.1" "3.0"; do
     fi
 done
 
-rm /etc/apt/apt.conf.d/84-surface-go-wifi || true
+if [[ -f /etc/apt/apt.conf.d/84-surface-go-wifi ]]; then
+    rm /etc/apt/apt.conf.d/84-surface-go-wifi
+fi
 
 exit 0
