@@ -1,0 +1,73 @@
+## Copyright (c) 2013-2019 Qualcomm Technologies, Inc. [board.bin]
+
+All rights reserved.
+
+Subject to the terms and conditions set forth below, Qualcomm
+Technologies, Inc. (“QTI”) hereby grants to you a nonexclusive,
+limited license under QTI’s copyrights to reproduce and redistribute
+this software in binary forms, without modification, for use solely in
+conjunction with a Qualcomm Technologies, Inc. chipset, provided that
+the following conditions are met:
+
+* Redistributions must reproduce the above copyright notice, this list
+  of conditions, and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of Qualcomm Technologies, Inc. nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+* No reverse engineering, decompiling, decrypting, or disassembling of
+  this software is permitted.
+
+* Subjecting this software to any third party license terms (e.g.
+  open source license terms), by any means, is prohibited.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. NO LICENSES OR OTHER RIGHTS,
+WHETHER EXPRESS, IMPLIED, BASED ON ESTOPPEL OR OTHERWISE, ARE GRANTED
+TO ANY PARTY'S PATENTS, PATENT APPLICATIONS, OR PATENTABLE INVENTIONS
+BY VIRTUE OF THIS LICENSE OR THE DELIVERY OR PROVISION BY QUALCOMM
+TECHNOLOGIES, INC. OF THE SOFTWARE.
+
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR ANY CONTRIBUTOR BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND REGARDLESS OF ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF OR RESULTING FROM THE USE OF THE
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY
+EVENT, THE TOTAL AGGREGATE LIABILITY THAT MAY BE IMPOSED ON QUALCOMM
+TECHNOLOGIES, INC. FOR ANY DIRECT DAMAGES ARISING UNDER OR RESULTING FROM
+THIS AGREEMENT OR IN CONNECTION WITH ANY USE OF THE SOFTWARE SHALL NOT
+EXCEED A TOTAL AMOUNT OF US$5.00.
+
+IF ANY OF THE ABOVE PROVISIONS ARE HELD TO BE VOID, INVALID,
+UNENFORCEABLE, OR ILLEGAL, THE OTHER PROVISIONS SHALL CONTINUE IN FULL
+FORCE AND EFFECT.
+
+
+## The MIT License [package]
+
+Copyright 2020 Josip Medved <jmedved@jmedved.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+  * The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,11 @@
+Package:        surface-go-wifi
+Version:        MAJOR.MINOR.PATCH
+Architecture:   ARCHITECTURE
+Maintainer:     Josip Medved <jmedved@jmedved.com>
+Homepage:       https://www.medo64.com/surface-go-wifi/
+Description:    Driver fixup for Surface Go
+ Automatically replaces QCA6174 driver board.bin each time it's updated.
+Section:        libs
+Priority:       optional
+Depends:        gnupg
+Build-Depends:  make
