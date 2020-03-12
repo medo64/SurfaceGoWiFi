@@ -22,7 +22,7 @@ pXF542bTCX+bXOfPWbdl/mnIBRKdsNGNu/FbXTQ4gEmXQwmki5YL8kRwbBloxuH2
 =gY4j
 -----END PGP PUBLIC KEY BLOCK-----" | apt-key add -
 
-# Make backup
+# Make the initial backup
 for VER in "2.1" "3.0"; do
     FILE1="/lib/firmware/ath10k/QCA6174/hw$VER/board.bin"
     if [[ -f "$FILE1" ]]; then
@@ -33,12 +33,8 @@ for VER in "2.1" "3.0"; do
     fi
 done
 
-# First install
-FILE1="/usr/lib/surface-go-wifi/board.bin"
-for VER in "2.1" "3.0"; do
-    FILE2=/lib/firmware/ath10k/QCA6174/hw$VER/board.bin
-    cp $FILE1 $FILE2
-done
+# Invoke for the first time
+/usr/lib/surface-go-wifi/bin/restore
 
 # APT script
 cat << EOF > /etc/apt/apt.conf.d/84-surface-go-wifi

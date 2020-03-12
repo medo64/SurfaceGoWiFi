@@ -60,11 +60,15 @@ package: dist
 	@chmod 755 $(PACKAGE_DIR)/DEBIAN/postinst
 	@chmod 755 $(PACKAGE_DIR)/DEBIAN/postrm
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/
-	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/bin/
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/backup/hw2.1/
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/backup/hw3.0/
-	@install -m 644 lib/board.bin $(PACKAGE_DIR)/usr/lib/surface-go-wifi/board.bin
+	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/bin/
+	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/template/hw2.1/
+	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/template/hw3.0/
+	@install -m 644 LICENSE.md $(PACKAGE_DIR)/usr/lib/surface-go-wifi/LICENSE
 	@install -m 755 src/restore.sh $(PACKAGE_DIR)/usr/lib/surface-go-wifi/bin/restore
+	@install -m 644 lib/hw2.1/board.bin $(PACKAGE_DIR)/usr/lib/surface-go-wifi/template/hw2.1/board.bin
+	@install -m 644 lib/hw3.0/board.bin $(PACKAGE_DIR)/usr/lib/surface-go-wifi/template/hw3.0/board.bin
 	@fakeroot dpkg-deb --build $(PACKAGE_DIR)/ > /dev/null
 	@cp /tmp/$(PACKAGE_NAME).deb dist/
 	@$(RM) -r $(PACKAGE_DIR)/
