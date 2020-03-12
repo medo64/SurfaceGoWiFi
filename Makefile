@@ -65,8 +65,6 @@ package: dist
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/backup/hw3.0/
 	@install -m 644 lib/board.bin $(PACKAGE_DIR)/usr/lib/surface-go-wifi/board.bin
 	@install -m 755 src/restore.sh $(PACKAGE_DIR)/usr/lib/surface-go-wifi/bin/restore
-	@install -d $(PACKAGE_DIR)/etc/apt/apt.conf.d/
-	@install -m 644 package/deb/84-surface-go-wifi $(PACKAGE_DIR)/etc/apt/apt.conf.d/84-surface-go-wifi
 	@fakeroot dpkg-deb --build $(PACKAGE_DIR)/ > /dev/null
 	@cp /tmp/$(PACKAGE_NAME).deb dist/
 	@$(RM) -r $(PACKAGE_DIR)/

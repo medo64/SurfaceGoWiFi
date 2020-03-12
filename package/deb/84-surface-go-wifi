@@ -1,3 +1,0 @@
-APT::Install::Post-Invoke-Success {
-  "if [[ -f /usr/lib/surface-go-wifi/bin/restore ]]; then /usr/lib/surface-go-wifi/bin/restore 2>/dev/null; fi || true";
-};
