@@ -9,7 +9,7 @@ DIST_NAME := surface-go-wifi
 DIST_VERSION := 0.0.2
 DEB_BUILD_ARCH := $(shell getconf LONG_BIT | sed "s/32/i386/" | sed "s/64/amd64/")
 
-SOURCE_LIST := Makefile CHANGES.md LICENSE.md README.md lib/ package/
+SOURCE_LIST := Makefile CHANGES.md LICENSE.md README.md lib/ package/ src/
 
 HAS_DPKGDEB := $(shell command -v dpkg-deb >/dev/null 2>&1 ; echo $$?)
 HAS_UNCOMMITTED := $(shell git diff --quiet 2>/dev/null ; echo $$?)
@@ -60,9 +60,11 @@ package: dist
 	@chmod 755 $(PACKAGE_DIR)/DEBIAN/postinst
 	@chmod 755 $(PACKAGE_DIR)/DEBIAN/postrm
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/
+	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/bin/
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/backup/hw2.1/
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/backup/hw3.0/
 	@install -m 644 lib/board.bin $(PACKAGE_DIR)/usr/lib/surface-go-wifi/board.bin
+	@install -m 755 src/restore.sh $(PACKAGE_DIR)/usr/lib/surface-go-wifi/bin/restore
 	@install -d $(PACKAGE_DIR)/etc/apt/apt.conf.d/
 	@install -m 644 package/deb/84-surface-go-wifi $(PACKAGE_DIR)/etc/apt/apt.conf.d/84-surface-go-wifi
 	@fakeroot dpkg-deb --build $(PACKAGE_DIR)/ > /dev/null
