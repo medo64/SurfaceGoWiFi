@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Make backup
+# Make the initial backup
 for VER in "2.1" "3.0"; do
     FILE1="/lib/firmware/ath10k/QCA6174/hw$VER/board.bin"
     if [[ -f "$FILE1" ]]; then
@@ -12,12 +12,15 @@ for VER in "2.1" "3.0"; do
     fi
 done
 
-# First install
-FILE1="/usr/lib/surface-go-wifi/board.bin"
-for VER in "2.1" "3.0"; do
-    FILE2=/lib/firmware/ath10k/QCA6174/hw$VER/board.bin
-    cp $FILE1 $FILE2
-done
+# Invoke for the first time
+/usr/lib/surface-go-wifi/bin/restore
+
+# APT script
+cat << EOF > /etc/apt/apt.conf.d/84-surface-go-wifi
+APT::Install::Post-Invoke-Success {
+  "[ -f /usr/lib/surface-go-wifi/bin/restore ] && /usr/lib/surface-go-wifi/bin/restore || true";
+};
+EOF
 
 # Done
 exit 0

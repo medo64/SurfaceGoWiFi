@@ -1,5 +1,9 @@
 ## Release Notes ##
 
+### 0.0.3 [2020-03-10] ###
+
+* APT script improvements
+
 ### 0.0.2 [2020-03-08] ###
 
 * APT script improvements
