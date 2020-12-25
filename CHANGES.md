@@ -1,5 +1,9 @@
 ## Release Notes ##
 
+### 0.0.4 [2020-12-24] ###
+
+* Adds repo after asking
+
 ### 0.0.3 [2020-03-10] ###
 
 * APT script improvements
