@@ -22,5 +22,8 @@ APT::Install::Post-Invoke-Success {
 };
 EOF
 
+# Just loading to suppress warning
+. /usr/share/debconf/confmodule || true
+
 # Done
 exit 0
