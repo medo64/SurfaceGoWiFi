@@ -57,6 +57,7 @@ package: dist
 	@gzip -cn --best build/changelog > $(PACKAGE_DIR)/usr/share/doc/surface-go-wifi/changelog.gz
 	@find $(PACKAGE_DIR)/ -type d -exec chmod 755 {} +
 	@find $(PACKAGE_DIR)/ -type f -exec chmod 644 {} +
+	@chmod 755 $(PACKAGE_DIR)/DEBIAN/config
 	@chmod 755 $(PACKAGE_DIR)/DEBIAN/postinst
 	@chmod 755 $(PACKAGE_DIR)/DEBIAN/postrm
 	@install -d $(PACKAGE_DIR)/usr/lib/surface-go-wifi/

@@ -7,5 +7,5 @@ Description:    Driver fixup for Surface Go
  Automatically replaces QCA6174 driver board.bin each time it's updated.
 Section:        libs
 Priority:       optional
-Depends:        gnupg
+Depends:        gnupg, debconf
 Build-Depends:  make
