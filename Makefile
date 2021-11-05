@@ -6,7 +6,7 @@ endif
 
 
 DIST_NAME := surface-go-wifi
-DIST_VERSION := 0.0.5
+DIST_VERSION := $(shell cat CHANGES.md | grep '[0-9]\.' | head -1 | cut -d" " -f2)
 DEB_BUILD_ARCH := $(shell getconf LONG_BIT | sed "s/32/i386/" | sed "s/64/amd64/")
 
 SOURCE_LIST := Makefile CHANGES.md LICENSE.md README.md lib/ package/ src/

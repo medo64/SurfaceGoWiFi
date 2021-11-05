@@ -1,5 +1,9 @@
 ## Release Notes ##
 
+### 0.0.6 [2021-11-04] ###
+
+* Changed repo URL
+
 ### 0.0.5 [2020-12-31] ###
 
 * Fixed repo addition
