@@ -3,4 +3,4 @@
 
 Automatic restoration of board.bin for Surface Go WiFi driver.
 
-Not needed for 22.04 or later.
+Not needed for Ubuntu 22.04 or later.
